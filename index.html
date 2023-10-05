@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Web Player:Music for everyone</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Spotify_App_Logo.svg/1200px-Spotify_App_Logo.svg.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <section class="side-bar">
+         <div class="logo">
+            <a href="#">
+            <img src="Medias/Spotify logo.svg" alt="logo"> </a>
+         </div>
+
+         <div class="sec pt-3 d-flex flex-column justify-content-center">
+            <div class=" hov s d-flex flex-row ">
+            <div class="icon"><img src="Medias/home.svg" alt="icon"></div>
+            <div class="home p pl-50"><a href="#">Home</a></div> </div>
+            <div class="hov s d-flex flex-row ">
+                <div class="icon"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></div>
+                <div class="search p "><a href="#">Search</a></div>
+            </div>
+            <div class="hov s d-flex flex-row ">
+                <div class="icon"><img src="Medias/library.svg" alt="icon"></div>
+                <div class="library p"> <a href="playlist.html">Your Library</a></div>
+            </div>
+         </div>
+
+         <div class="sec ">
+            <div class="hov s d-flex flex-row">
+                <div class="icon"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></div>
+                <div class="cp p"><a href="#">Create Playlist</a></div>
+            </div>
+            <div class="hov s d-flex flex-row">
+                <div class="icon"> <img src="Medias/like.svg" alt="icon"></div>
+                <div class="like p"> <a href="playlist.html" target="_blank">Liked Playlist</a></div>
+            </div>
+            <div class="hov s d-flex flex-row">
+                <div class="icon"><img src="Medias/episode.svg" alt="icon"></div>
+                <div class="episode p"><a href="#">Your Episodes</a> </div>
+            </div>
+         </div>
+           
+         <div class="sec-3">
+            <div class="hov py-1"><a href="#">Fav</a></div>
+            <div class="hov py-1"><a href="#">Daily Mix 1</a></div>
+            <div class="hov py-1"><a href="#">Discover Weekly</a></div>
+            <div class="hov py-1"><a href="#">Malayalam</a></div>
+            <div class="hov py-1"><a href="#">Dance / Electronix Mix</a></div>
+            <div class="hov py-1"><a href="#">EDM / Popular</a></div>
+         </div>
+
+         <div class="install d-flex flex-row">
+          
+            <div class="i-icon"><img src="Medias/install.svg" alt="icon"></div>
+            <a href="#"><div class="inst ">Install App</div>  </a>
+         </div>
+        
+
+    </section>
+
+    <section class="main">
+
+    <section class="right-c d-flex flex-column">
+
+      <div class="top d-flex flex-row justify-content-between">
+        <div class="l-r ">
+            <img src="Medias/top arrow navigation.svg" alt="icon">
+        </div>
+        <div class="user d-flex flex-row">
+            <div><img src="Medias/angel.svg" alt="icon"></div>
+            <div class="angel">Angel</div>
+            <div><i class="fa-solid fa-caret-down" style="color: #ffffff;"></i></div>
+        </div>
+      </div>
+
+      <div class="gm">Good Morning</div>
+
+      <div class="ts d-flex flex-row">
+
+       <div class="tsi d-flex flex-row">
+        <div class="img"><img src="Medias/like.svg" alt="icon"></div>
+        <div>Liked Songs</div>
+       </div>
+       <div class="tsi d-flex flex-row">
+        <div class="img"><img src="Medias/mt-i-1.svg" alt="icon"></div>
+        <div>Neffex Playlist</div>
+       </div>
+       <div class="tsi d-flex flex-row">
+       <div class="img"><img src="data:image/jpeg;base64,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" alt=""></div>
+       <div>Trance</div>
+        </div>
+       
+       <div class="tsi d-flex flex-row">
+        <div class="img"><img src="Medias/mt-i-3.svg" alt=""></div>
+        <div>Electronic Music</div>   
+        </div>
+    </div>
+      
+
+    
+
+     </section>
+     
+     <section class="shows">
+
+        <div class="cont d-flex flex-row">
+            <div class="head">Shows you might like</div>
+            <div class="see">See all</div>
+        </div>
+   
+        <div class="s-contents">
+            <div>
+          
+                <div class="row">
+                    <div class="col">
+                        <div><img src="Medias/s-i-1.svg" alt="i"></div>
+                        <div class="name">Weekly Motivatio...</div>
+                        <div class="subname">Ben Ina Scott</div>
+                    </div>
+                    <div class="col">
+                        <div><img src="Medias/s-i-2.svg" alt="i"></div>
+                        <div class="name">MEDITATION SELF</div>
+                        <div class="subname">Ibn Hussain Aleen</div>
+                    </div>
+                    <div class="col">
+                        <div><img src="Medias/s-i-3.svg" alt="i"></div>
+                        <div class="name">The Alexa Show</div>
+                        <div class="subname">Adriana Tom</div>
+                    </div>
+                    <div class="col">
+                        <div><img src="Medias/s-i-4.svg" alt="i"></div>
+                        <div class="name">Words beyond act...</div>
+                        <div class="subname">Samuel Scott</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div><img src="Medias/s-i-4.svg" alt="i"></div>
+                        <div class="name">Weekly Motivatio...</div>
+                        <div class="subname">Ben Ina Scott</div>
+                    </div>
+                    <div class="col">
+                        <div><img src="Medias/s-i-1.svg" alt="i"></div>
+                        <div class="name">MEDITATION SELF</div>
+                        <div class="subname">Ibn Hussain Aleen</div>
+                    </div>
+                    <div class="col">
+                        <div><img src="Medias/s-i-2.svg" alt="i"></div>
+                        <div class="name">The Alexa Show</div>
+                        <div class="subname">Adriana Tom</div>
+                    </div>
+                    <div class="col">
+                        <div><img src="Medias/s-i-3.svg" alt="i"></div>
+                        <div class="name">Words beyond act...</div>
+                        <div class="subname">Samuel Scott</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>  
+
+     </section>
+</section>
+     <!---------- FOOTER---------- -->
+    <section class="s-f d-flex flex-row justify-content-between align-items-center">
+        
+        <div class="l-c d-flex flex-row">
+         <div class="c-s">
+            <img src="Medias/C-S-pic.svg" alt="icon">
+         </div>
+         <div class="cs-name">
+            Dreaming On <br> <span>NEFFEX</span>
+         </div>
+         <div class="hrt">
+            <img src="Medias/heart.svg" alt="icon">
+         </div>
+        </div>
+
+        <div class="c-c d-flex flex-column justify-content-center ">
+           <div class="pad ic  p-options d-flex flex-row ">
+            <div class="ic"><a href="#"><i class="fa-solid fa-shuffle" style="color: #ffffff;"></i></a></div>
+            
+            <div class="ic"><a href="#"><i class="fa-solid fa-backward-step" style="color: #fafcff;"></i></a></div>
+            <div><a href="#"><img src="Medias/play.svg" alt="icon"></a></div>
+            <div class="ic"><a href="#"><i class="fa-solid fa-forward-step" style="color: #ffffff;"></i></a></div>
+            <div class="ic"><a href="#"><i class="fa-solid fa-repeat" style="color: #ffffff;"></i></a></div>
+           </div>
+           <div class="playback d-flex flex-row ">
+           <div>2:11 </div> 
+           <div class="line"></div>
+           <div>2:42</div>
+           </div>
+
+        </div> 
+        
+
+        <div class="r-c d-flex flex-row justify-content-center align-items-center">
+            <div class="i"><a href="#"><img src="Medias/mic.svg" alt="icon"></a></div>
+            <div class="i"><a href="#"><img src="Medias/queue.svg" alt="icon"></a></div>
+            <div class="i"><a href="#"><img src="Medias/laptop.svg" alt="icon"></a></div>
+            <div class="i"><a href="#"><i class="fa-solid fa-volume-high" style="color:#ffffff;"></i></a></div>
+            <div class="i line"></div>
+            <div class="i"><a href="#"><img src="Medias/max.svg" alt="icon"></a></div>
+        </div>
+       
+    </section>
+    
+    <div class="arrow"><i class="fa-solid fa-sort-up" style="color: #2cf61e;"></i></div>
+    <div class="listening">
+        
+        <i class="fa-solid fa-volume-high" style="color:black;"></i>
+        listening on HP Pavilion-15-ec1021AX-NVIDIA GeForce GTX 1650
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
